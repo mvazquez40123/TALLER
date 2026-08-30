@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>OBD Diagnóstico IA</title>
+
+styles.css
+
+manifest.json
+
+https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.jsscript>
+
+</head>
+
+<body>
+
+<section id="splash">
+
+<div class="overlay">
+
+<h1>🚗 OBD Diagnóstico IA</h1>
+
+<p>
+Consulta orientativa de códigos OBD-II.
+</p>
+
+<button id="startApp">
+COMENZAR
+</button>
+
+</div>
+
+</section>
+
+<section id="app" class="hidden">
+
+<header>
+
+<h1>🔧 OBD Diagnóstico IA</h1>
+
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>Vehículo</h2>
+
+<select id="marca">
+
+<option value="">Seleccione marca</option>
+
+<option>Seat</option>
+<option>Volkswagen</option>
+<option>Audi</option>
+<option>BMW</option>
+<option>Mercedes</option>
+<option>Ford</option>
+<option>Peugeot</option>
+<option>Renault</option>
+<option>Toyota</option>
+
+</select>
+
+<input
+id="modelo"
+placeholder="Modelo">
+
+<input
+id="anio"
+type="number"
+placeholder="Año">
+
+<input
+id="codigo"
+placeholder="Código OBD (Ejemplo P0420)">
+
+<div class="grid">
+
+<button id="buscar">
+🔍 Buscar
+</button>
+
+<button id="limpiar">
+🧹 Nueva búsqueda
+</button>
+
+<button id="inicio">
+🏠 Inicio
+</button>
+
+</div>
+
+</div>
+
+<div id="resultado"></div>
+
+<div class="grid">
+
+<button id="voz">
+🔊 Leer resultado
+</button>
+
+<button id="pdf">
+📄 Generar PDF
+</button>
+
+<button id="youtube">
+🎥 Vídeos
+</button>
+
+<button id="favorito">
+⭐ Favorito
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Favoritos</h2>
+
+<div id="favoritos"></div>
+
+</div>
+
+<div class="card">
+
+<h2>🕒 Historial</h2>
+
+<div id="historial"></div>
+
+</div>
+
+<div class="warning">
+
+</div>
+
+</main>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>

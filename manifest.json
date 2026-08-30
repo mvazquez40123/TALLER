@@ -1,0 +1,9 @@
+{
+  "name": "OBD Diagnóstico IA",
+  "short_name": "OBD IA",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f8",
+  "theme_color": "#1976d2",
+  "lang": "es"
+}
